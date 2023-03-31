@@ -1,0 +1,27 @@
+{% extends "navbar_template.html" %}
+
+
+{% block content %}
+<script src="static/user_profile_script.js"></script>
+
+<div class="container p-3 bg-light border">
+    <button onclick="prompt_user()" type="button" class="btn btn-success">Log in with Spotify</button>
+    <br>
+    <br>
+    <div class="spinner-border"></div>
+    <br>
+    <br>
+    <p id="user_details"></p>
+</div>
+
+<br><br>
+
+<div class="container p-3 bg-light border">
+    <button onclick="get_trending()" type="button" class="btn btn-success">Get trending tracks</button>
+    <br><br>
+    <div class="spinner-border"></div>
+    <br><br>
+    <p id="trending_tracks"></p>
+</div>
+{% endblock %}
+

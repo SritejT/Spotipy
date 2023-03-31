@@ -1,0 +1,13 @@
+{% extends "navbar_template.html" %}
+
+{% block content %}
+<script src="static/related_artists_script.js"></script>
+
+<div class="container p-3 bg-light border">
+    <button onclick = get_rising_artists() type="button" class="btn btn-success">Find artists related to:</button>
+    <br><br>
+    <input type="text" class="form-control" id="famous_artist">
+    <p id="user_analysis"></p>
+</div>
+{% endblock %}
+

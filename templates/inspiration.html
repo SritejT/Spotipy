@@ -1,0 +1,15 @@
+{% extends "navbar_template.html" %}
+
+{% block content %}
+<script src="static/inspiration_script.js"></script>
+
+<div class="container p-3 bg-light border">
+    <button onclick = search_popular() type="button" class="btn btn-success">Give me inspiration</button>
+    <br><br>
+    <p id="popular"></p>
+    <img id="artist_img" src="" alt="Press the button to get inspired." style="width: 100px; height: 100px;">
+    <br>
+    <p id="add_button"></p>
+</div>
+{% endblock %}
+
